@@ -330,3 +330,46 @@ footer p{
     }
     
 }
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    header h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .donate-plan p{
+        margin-bottom: 50px;
+    }
+
+    .donate-card .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .donate-card,
+    .donation {
+        flex-direction: column;
+    }
+
+    .donate-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .donate-text,
+    .donate-text h2,
+    .donate-text p {
+        text-align: center;
+    }
+
+    #display-none {
+        display: none;
+    }
+    .get-update-form{
+        width: 100%;
+    }
+}
