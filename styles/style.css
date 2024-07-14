@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&display=swap');
+
 /* font-family: "Poppins", sans-serif; */
 /* font-family: "Inter", sans-serif; */
+/* font-family: "Lobster", sans-serif; */
+/* font-family: "Manrope", sans-serif; */
 
 * {
     margin: 0;
@@ -69,7 +73,8 @@ button {
 } */
 
 .donate-today,
-.donate-plan {
+.donate-plan,
+.get-update {
     margin-top: 130px;
     display: flex;
     flex-direction: column;
@@ -78,7 +83,8 @@ button {
 }
 
 .donate-today h2,
-.donate-plan h2 {
+.donate-plan h2,
+.get-update h2 {
     color: rgb(18, 18, 18);
     font-family: Inter;
     font-size: 45px;
@@ -88,7 +94,8 @@ button {
 }
 
 .donate-today p,
-.donate-plan p {
+.donate-plan p,
+.get-update p {
     margin-top: 20px;
     color: rgb(112, 112, 112);
     font-family: Poppins;
@@ -222,6 +229,75 @@ button {
     border-radius: 10px;
 }
 
+.need-us {
+    flex-direction: row-reverse;
+}
+
+.get-update-form {
+    width: 809px;
+    height: 200px;
+    background: rgb(255, 244, 214);
+    margin-top: 50px;
+}
+
+.get-update-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-update-form input {
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(217, 217, 217);
+    width: 275px;
+    height: 48px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.get-update-form input:focus {
+    outline: 0;
+}
+
+.get-update-form input::placeholder {
+    font-size: 20px;
+}
+
+.get-update-form button {
+    border-radius: 0px 5px 5px 0px;
+    width: 157px;
+    height: 48px;
+}
+.get-update{
+    margin-bottom: 130px;
+}
+footer {
+    height: 177px;
+    background: rgb(11, 13, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h1 {
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+footer p{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+}
+
 @media screen and (max-width: 480px) {
     .header-content {
         /* padding-top: 10rem; */
@@ -258,5 +334,8 @@ button {
 
     #display-none {
         display: none;
+    }
+    .get-update-form{
+        width: 100%;
     }
 }
