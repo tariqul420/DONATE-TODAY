@@ -12,6 +12,7 @@
 body {
     max-width: 90rem;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -63,7 +64,12 @@ button {
     border: none;
 }
 
-.donate-today {
+/* .donate-today {
+    padding-top: 130px;
+} */
+
+.donate-today,
+.donate-plan {
     margin-top: 130px;
     display: flex;
     flex-direction: column;
@@ -71,7 +77,8 @@ button {
     justify-content: center;
 }
 
-.donate-today h2 {
+.donate-today h2,
+.donate-plan h2 {
     color: rgb(18, 18, 18);
     font-family: Inter;
     font-size: 45px;
@@ -80,7 +87,8 @@ button {
     text-align: center;
 }
 
-.donate-today p {
+.donate-today p,
+.donate-plan p {
     margin-top: 20px;
     color: rgb(112, 112, 112);
     font-family: Poppins;
@@ -121,10 +129,54 @@ button {
     border-radius: 5px;
     background: rgb(255, 238, 238);
 }
-#amount{
+
+#amount {
     opacity: 0.6;
     margin-bottom: 40px;
     margin-top: 60px;
+}
+
+.donate-plan {
+    margin-top: 130px;
+}
+
+.donate-card {
+    display: flex;
+    gap: 24px;
+}
+
+.donate-card .card {
+    width: 360px;
+    height: 352px;
+    border-radius: 5px;
+    background: rgba(79, 157, 166, 0.1);
+    padding: 63px 23px;
+}
+
+#card2 {
+    background: rgba(255, 89, 89, 0.1);
+}
+
+#card3 {
+    background: #fef4d6;
+}
+
+.donate-card h3 {
+    color: rgb(18, 18, 18);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+
+.donate-card p {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 @media screen and (max-width: 480px) {
@@ -137,10 +189,16 @@ button {
         font-size: 40px;
         line-height: 60px;
     }
+
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    .hide{
+
+    .hide {
         display: none;
+    }
+
+    .donate-card {
+        flex-direction: column;
     }
 }
